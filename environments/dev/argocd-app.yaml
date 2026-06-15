@@ -10,8 +10,6 @@ spec:
     path: overlays/dev
     repoURL: https://github.com/rpkkashyap/nginx.git
     targetRevision: HEAD
-    directory:
-      recurse: false
   sources: []
   project: dev
   syncPolicy:
