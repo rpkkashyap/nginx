@@ -1,6 +1,6 @@
 #base kustomization file
 apiVersion: kustomize.config.k8s.io/v1beta1
-Kind: Kustomization
+kind: Kustomization
 
 resources:
   - nginx-deployment.yaml
