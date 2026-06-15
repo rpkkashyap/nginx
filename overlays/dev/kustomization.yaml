@@ -1,6 +1,6 @@
 #overlays/dev/kustomization.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
-Kind: kustomization
+Kind: Kustomization
 
 #point generic base configucation
 resources: 
