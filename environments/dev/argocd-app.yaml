@@ -15,8 +15,10 @@ spec:
   project: dev
   syncPolicy:
     automated:
-      prune: false
-      selfHeal: false
+      prune: true
+      selfHeal: ture
       enabled: true
     syncOptions:
       - CreateNamespace=true
+      - PruneLast=true  
+      - RespectIgnoreDifferences=true
