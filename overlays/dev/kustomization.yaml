@@ -5,4 +5,5 @@ kind: kustomization
 #point generic base configucation
 resources: 
   - ../../base
+#Automatically inject this namespace into all resources
 namespace: dev-app
