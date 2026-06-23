@@ -21,3 +21,13 @@ spec:
       - CreateNamespace=true
       - PruneLast=true  
       - RespectIgnoreDifferences=true
+  roles:
+  - name: dev-developer-role
+    description: "Developer access to dev-project"
+    policies:
+    - p, proj:dev-project:dev-developer-role, applications, get, dev-project/*, allow
+    - p, proj:dev-project:dev-developer-role, applications, sync, dev-project/*, allow
+    
+    # --- Map the local user here ---
+    groups:
+    - account:test1  # Maps the local Argo CD user directly to this ro
